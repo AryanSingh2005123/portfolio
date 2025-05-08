@@ -1,3 +1,67 @@
+/* Add to your style.css for the new Skills section */
+/* filepath: c:\Users\aryan\Downloads\portfolio-main\portfolio-main\style.css */
+.skills {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sklcont {
+    width: 89%;
+}
+.skls-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.skill-box {
+    background: #181818;
+    border: 1px solid #fed700;
+    border-radius: 10px;
+    color: #fed700;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: transform 0.3s, background 0.3s, color 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.skill-box i {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.skill-box h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #fed700;
+}
+.skill-box:hover {
+    background: #fed700;
+    color: #202020;
+    transform: translateY(-10px) scale(1.05);
+}
+.skill-box:hover h2,
+.skill-box:hover i {
+    color: #202020;
+}
+@media (max-width: 800px) {
+    .skls-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skill-box {
+        width: 90vw;
+        max-width: 300px;
+    }
+}
 body{
     margin: 0;
     padding:0;
@@ -306,37 +370,54 @@ body{
 .sklcont{
     width: 89%;
 }
-.skls{
+.skls-row {
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 19px;
+    gap: 30px;
 }
-.box{
-    padding: 75px;
+.skill-box {
+    background: #181818;
+    border: 1px solid #fed700;
     border-radius: 10px;
-    color: white;
-    text-align: center;
-    border: 1px solid white;
+    color: #fed700;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
+    transition: transform 0.3s, background 0.3s, color 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-.box i{
-    padding: 5px;
+.skill-box i {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.skill-box h2 {
+    font-size: 22px;
+    margin: 0;
     color: #fed700;
 }
-.box:hover{
-    background-color: #fed700;
+.skill-box:hover {
+    background: #fed700;
+    color: #202020;
+    transform: translateY(-10px) scale(1.05);
+}
+.skill-box:hover h2,
+.skill-box:hover i {
     color: #202020;
 }
-.box:hover i{
-    color: #202020;
-}
-@media all and (max-width:450px)
-{
-    .box{
-        padding: 20px;
+@media (max-width: 800px) {
+    .skls-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skill-box {
+        width: 90vw;
+        max-width: 300px;
     }
 }
 
